@@ -1,0 +1,12 @@
+name: github-actions-self-hosted-runner
+
+on:
+  push:
+
+jobs:
+  b16secondjob:
+    runs-on: self-hosted
+
+    steps:
+      - name: Message
+        run: echo "self hosted runner job"
